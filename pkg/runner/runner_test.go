@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core"
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/options"
-	"github.com/boy-hack/ksubdomain/v2/pkg/device"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/outputter"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/outputter/output"
-	processbar2 "github.com/boy-hack/ksubdomain/v2/pkg/runner/processbar"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/options"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/device"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/outputter"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/outputter/output"
+	processbar2 "github.com/Dk0n9/ksubdomain/v2/pkg/runner/processbar"
 	"github.com/stretchr/testify/assert"
 )
 

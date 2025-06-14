@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/gologger"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/result"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/gologger"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/result"
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/pcap"

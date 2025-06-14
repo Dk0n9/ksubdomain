@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/options"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/options"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner"
 	"github.com/urfave/cli/v2"
 )
 

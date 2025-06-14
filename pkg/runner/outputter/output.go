@@ -1,7 +1,7 @@
 package outputter
 
 import (
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/result"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/result"
 )
 
 type Output interface {

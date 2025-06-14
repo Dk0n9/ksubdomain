@@ -5,12 +5,12 @@ import (
 	"context"
 	"os"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/gologger"
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/options"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/outputter"
-	output2 "github.com/boy-hack/ksubdomain/v2/pkg/runner/outputter/output"
-	processbar2 "github.com/boy-hack/ksubdomain/v2/pkg/runner/processbar"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/gologger"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/options"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/outputter"
+	output2 "github.com/Dk0n9/ksubdomain/v2/pkg/runner/outputter/output"
+	processbar2 "github.com/Dk0n9/ksubdomain/v2/pkg/runner/processbar"
 	"github.com/urfave/cli/v2"
 )
 

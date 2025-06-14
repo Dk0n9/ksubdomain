@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/predict"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/result"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/predict"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/result"
 )
 
 // handleResult 处理扫描结果

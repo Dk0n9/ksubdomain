@@ -9,9 +9,9 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core"
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/gologger"
-	"github.com/boy-hack/ksubdomain/v2/pkg/utils"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/gologger"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/utils"
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/pcap"

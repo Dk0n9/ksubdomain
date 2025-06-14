@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/gologger"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/result"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/gologger"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/result"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/utils"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/utils"
 )
 
 type JsonOutPut struct {

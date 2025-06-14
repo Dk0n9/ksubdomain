@@ -8,12 +8,12 @@ package main
 
 import (
 	"context"
-	"github.com/boy-hack/ksubdomain/core/gologger"
-	"github.com/boy-hack/ksubdomain/core/options"
-	"github.com/boy-hack/ksubdomain/runner"
-	"github.com/boy-hack/ksubdomain/runner/outputter"
-	"github.com/boy-hack/ksubdomain/runner/outputter/output"
-	"github.com/boy-hack/ksubdomain/runner/processbar"
+	"github.com/Dk0n9/ksubdomain/core/gologger"
+	"github.com/Dk0n9/ksubdomain/core/options"
+	"github.com/Dk0n9/ksubdomain/runner"
+	"github.com/Dk0n9/ksubdomain/runner/outputter"
+	"github.com/Dk0n9/ksubdomain/runner/outputter/output"
+	"github.com/Dk0n9/ksubdomain/runner/processbar"
 	"strings"
 )
 

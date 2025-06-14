@@ -1,6 +1,6 @@
 # KSubdomain: 极速无状态子域名爆破工具
 
-[![Release](https://img.shields.io/github/release/boy-hack/ksubdomain.svg)](https://github.com/boy-hack/ksubdomain/releases) [![Go Report Card](https://goreportcard.com/badge/github.com/boy-hack/ksubdomain)](https://goreportcard.com/report/github.com/boy-hack/ksubdomain) [![License](https://img.shields.io/github/license/boy-hack/ksubdomain)](https://github.com/boy-hack/ksubdomain/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/release/boy-hack/ksubdomain.svg)](https://github.com/Dk0n9/ksubdomain/releases) [![Go Report Card](https://goreportcard.com/badge/github.com/Dk0n9/ksubdomain)](https://goreportcard.com/report/github.com/Dk0n9/ksubdomain) [![License](https://img.shields.io/github/license/boy-hack/ksubdomain)](https://github.com/Dk0n9/ksubdomain/blob/main/LICENSE)
 
 **KSubdomain 是一款基于无状态技术的子域名爆破工具，带来前所未有的扫描速度和极低的内存占用。** 告别传统工具的效率瓶颈，体验闪电般的 DNS 查询，同时拥有可靠的状态表重发机制，确保结果的完整性。 KSubdomain 支持 Windows、Linux 和 macOS，是进行大规模DNS资产探测的理想选择。
 
@@ -54,7 +54,7 @@ KSubdomain 2.0 版本引入了多项底层优化，进一步压榨性能潜力�
 
 ## 📦 安装
 
-1.  **下载预编译二进制文件:** 前往 [Releases](https://github.com/boy-hack/ksubdomain/releases) 页面下载对应系统的最新版本。
+1.  **下载预编译二进制文件:** 前往 [Releases](https://github.com/Dk0n9/ksubdomain/releases) 页面下载对应系统的最新版本。
 2.  **安装 `libpcap` 依赖:**
     *   **Windows:** 下载并安装 [Npcap](https://npcap.com/) 驱动 (WinPcap 可能无效)。
     *   **Linux:** 已静态编译打包 `libpcap`，通常无需额外操作。若遇问题，请尝试安装 `libpcap-dev` 或 `libcap-devel` 包。
@@ -67,7 +67,7 @@ KSubdomain 2.0 版本引入了多项底层优化，进一步压榨性能潜力�
 确保您已安装 Go 1.23 版本和 `libpcap` 环境。
 
 ```bash
-go install -v github.com/boy-hack/ksubdomain/v2/cmd/ksubdomain@latest
+go install -v github.com/Dk0n9/ksubdomain/v2/cmd/ksubdomain@latest
 # 二进制文件通常位于 $GOPATH/bin 或 $HOME/go/bin
 ```
 

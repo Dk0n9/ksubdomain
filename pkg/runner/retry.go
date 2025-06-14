@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/statusdb"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/statusdb"
 )
 
 // retry 优化的重试机制

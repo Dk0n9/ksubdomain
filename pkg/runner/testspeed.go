@@ -1,8 +1,8 @@
 package runner
 
 import (
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/gologger"
-	"github.com/boy-hack/ksubdomain/v2/pkg/device"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/gologger"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/device"
 	"github.com/phayes/freeport"
 	"net"
 	"time"

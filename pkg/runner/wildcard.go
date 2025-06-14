@@ -1,7 +1,7 @@
 package runner
 
 import (
-	"github.com/boy-hack/ksubdomain/v2/pkg/core"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core"
 	"net"
 )
 

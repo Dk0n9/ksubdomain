@@ -1,12 +1,12 @@
 package options
 
 import (
-	device2 "github.com/boy-hack/ksubdomain/v2/pkg/device"
+	device2 "github.com/Dk0n9/ksubdomain/v2/pkg/device"
 	"strconv"
 
-	"github.com/boy-hack/ksubdomain/v2/pkg/core/gologger"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/outputter"
-	"github.com/boy-hack/ksubdomain/v2/pkg/runner/processbar"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/core/gologger"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/outputter"
+	"github.com/Dk0n9/ksubdomain/v2/pkg/runner/processbar"
 )
 
 type OptionMethod string
