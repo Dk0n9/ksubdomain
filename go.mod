@@ -1,4 +1,4 @@
-module github.com/boy-hack/ksubdomain/v2
+module github.com/Dk0n9/ksubdomain/v2
 
 go 1.23.0
 
