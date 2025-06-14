@@ -69,9 +69,9 @@ func (f *CsvOutput) Close() error {
 		// 将Answers数组转换为单个字符串，用分号分隔
 		answersStr := ""
 		if len(result.Answers) > 0 {
-			answersStr = result.Answers[0]
+			answersStr = result.Answers[0].Value
 			for i := 1; i < len(result.Answers); i++ {
-				answersStr += ";" + result.Answers[i]
+				answersStr += ";" + result.Answers[i].Type
 			}
 		}
 

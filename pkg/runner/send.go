@@ -120,6 +120,8 @@ func (r *Runner) sendCycle() {
 			r.statusDB.Set(domain, v)
 		}
 		send(domain, v.Dns, r.options.EtherInfo, r.dnsID, uint16(r.listenPort), r.pcapHandle, layers.DNSTypeA)
+		// 兼顾IPV6
+		send(domain, v.Dns, r.options.EtherInfo, r.dnsID, uint16(r.listenPort), r.pcapHandle, layers.DNSTypeAAAA)
 		atomic.AddUint64(&r.sendCount, 1)
 	}
 }

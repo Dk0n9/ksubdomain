@@ -1,6 +1,11 @@
 package result
 
+type Answer struct {
+	Type  string `json:"type"`
+	Value string `json:"value"`
+}
+
 type Result struct {
 	Subdomain string   `json:"subdomain"`
-	Answers   []string `json:"answers"`
+	Answers   []Answer `json:"answers"`
 }

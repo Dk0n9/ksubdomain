@@ -17,32 +17,28 @@ import (
 )
 
 // dnsRecord2String 将DNS记录转换为字符串
-func dnsRecord2String(rr layers.DNSResourceRecord) (string, error) {
+func dnsRecord2Struct(rr layers.DNSResourceRecord) (result.Answer, error) {
 	if rr.Class == layers.DNSClassIN {
 		switch rr.Type {
-		case layers.DNSTypeA, layers.DNSTypeAAAA:
+		case layers.DNSTypeA:
 			if rr.IP != nil {
-				return rr.IP.String(), nil
+				return result.Answer{Type: "A", Value: rr.IP.String()}, nil
+			}
+		case layers.DNSTypeAAAA:
+			if rr.IP != nil {
+				return result.Answer{Type: "AAAA", Value: rr.IP.String()}, nil
 			}
 		case layers.DNSTypeNS:
 			if rr.NS != nil {
-				return "NS " + string(rr.NS), nil
+				return result.Answer{Type: "NS", Value: string(rr.NS)}, nil
 			}
 		case layers.DNSTypeCNAME:
 			if rr.CNAME != nil {
-				return "CNAME " + string(rr.CNAME), nil
-			}
-		case layers.DNSTypePTR:
-			if rr.PTR != nil {
-				return "PTR " + string(rr.PTR), nil
-			}
-		case layers.DNSTypeTXT:
-			if rr.TXT != nil {
-				return "TXT " + string(rr.TXT), nil
+				return result.Answer{Type: "CNAME", Value: string(rr.CNAME)}, nil
 			}
 		}
 	}
-	return "", errors.New("dns record error")
+	return result.Answer{}, errors.New("dns record error")
 }
 
 // 预分配解码器对象池，避免频繁创建
@@ -187,9 +183,9 @@ func (r *Runner) recvChanel(ctx context.Context, wg *sync.WaitGroup) {
 					r.statusDB.Del(subdomain)
 					if dns.ANCount > 0 {
 						atomic.AddUint64(&r.successCount, 1)
-						var answers []string
+						var answers []result.Answer
 						for _, v := range dns.Answers {
-							answer, err := dnsRecord2String(v)
+							answer, err := dnsRecord2Struct(v)
 							if err != nil {
 								continue
 							}

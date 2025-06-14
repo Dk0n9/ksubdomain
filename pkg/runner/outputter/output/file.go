@@ -31,7 +31,7 @@ func (f *FileOutPut) WriteDomainResult(domain result.Result) error {
 	var msg string
 	var domains []string = []string{domain.Subdomain}
 	for _, item := range domain.Answers {
-		domains = append(domains, item)
+		domains = append(domains, item.Value)
 	}
 	msg = strings.Join(domains, "=>")
 	_, err := f.output.WriteString(msg + "\n")
@@ -44,7 +44,11 @@ func (f *FileOutPut) Close() error {
 	buf := strings.Builder{}
 	for _, item := range results {
 		buf.WriteString(item.Subdomain + "=>")
-		buf.WriteString(strings.Join(item.Answers, "=>"))
+		var answerItems []string
+		for _, w := range item.Answers {
+			answerItems = append(answerItems, w.Value)
+		}
+		buf.WriteString(strings.Join(answerItems, "=>"))
 		buf.WriteString("\n")
 	}
 	err := os.WriteFile(f.filename, []byte(buf.String()), 0664)

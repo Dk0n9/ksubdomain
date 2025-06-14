@@ -18,7 +18,7 @@ func (s *ScreenOutputNoWidth) WriteDomainResult(domain result.Result) error {
 	var msg string
 	var domains []string = []string{domain.Subdomain}
 	for _, item := range domain.Answers {
-		domains = append(domains, item)
+		domains = append(domains, item.Value)
 	}
 	msg = strings.Join(domains, " => ")
 	if !s.silent {

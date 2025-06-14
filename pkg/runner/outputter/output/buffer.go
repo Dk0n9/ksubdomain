@@ -19,7 +19,7 @@ func NewBuffOutput() (*BuffOutput, error) {
 func (b *BuffOutput) WriteDomainResult(domain result.Result) error {
 	var domains []string = []string{domain.Subdomain}
 	for _, item := range domain.Answers {
-		domains = append(domains, item)
+		domains = append(domains, item.Value)
 	}
 	msg := strings.Join(domains, "=>")
 	b.sb.WriteString(msg + "\n")
